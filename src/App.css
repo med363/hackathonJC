@@ -1,0 +1,336 @@
+#menu {
+  position: absolute;
+  left: 0px;
+  right: 2px;
+  width: 2px;
+  top: 0px;
+  bottom: 90%;
+
+  width: 100%;
+  display: block;
+  transition: top 0.3s;
+  /* position: relative; */
+  /* border-top-color: initial;
+    border-top-style: none;
+    border-top-width: medium;
+    border-right-color: initial;
+    border-right-style: none;
+    border-right-width: medium;
+    border-bottom-color: initial;
+    border-bottom-style: none;
+    border-bottom-width: medium;
+    border-left-color: initial;
+    border-left-style: none;
+    border-left-width: medium;
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    -ms-border-radius: 0;
+    border-radius: 0;
+    margin: 0;
+    position: relative; */
+}
+/* overflow: auto;
+  white-space: nowrap;
+  /* overflow: hidden;
+  background-color: #f1f1f1;
+  padding: 90px 10px; */
+/* width: 100%;
+  top: 0;
+  z-index: 99; */
+
+div#menu a {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 15px;
+  padding-bottom: 0px;
+  padding-top: 2px;
+  height: 50px;
+  text-decoration: none;
+  font-size: 20px;
+  /* position: relative; */
+  /* display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+  /* float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px; */
+}
+div.menu :hover {
+  background-color: red;
+  /* background-color: #ddd;
+  color: black; */
+}
+
+#menu-right:hover {
+  color: white;
+}
+.link {
+  margin-top: 0px;
+}
+
+.link:hover {
+  border: "1px none blue";
+}
+.wourd:hover {
+  color: red;
+}
+/* body{
+   background-image:url("/1.jpg");
+ } */
+body {
+  /* background-image: url("/1.jpg");*/
+  /* Full height */
+  /* height: 100%;  */
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* .landingPage {
+  background-image: url("/1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+} */
+.contact1 {
+  width: 100%;
+  min-height: 100%;
+  padding: 15px;
+
+  background: -webkit-linear-gradient(left, #0072ff, #00c6ff);
+  background: -o-linear-gradient(left, #0072ff, #00c6ff);
+  background: -moz-linear-gradient(left, #0072ff, #00c6ff);
+  background: linear-gradient(left, #0072ff, #00c6ff);
+
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-contact1 {
+  width: 1163px;
+
+  border-radius: 10px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  background-image: url("/public/1.jpg");
+
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+
+  align-items: center;
+
+  padding: 90px 130px 88px 148px;
+  margin-top: -148px;
+}
+
+/*------------------------------------------------------------------
+[  ]*/
+.contact1-pic {
+  width: 296px;
+}
+.input1 {
+  display: block;
+  width: 100%;
+  font-family: Montserrat-Bold;
+  font-size: 15px;
+  line-height: 1.5;
+}
+.wrap-input1 {
+  position: relative;
+  width: 100%;
+  z-index: 1;
+  margin-bottom: 20px;
+}
+@media (max-width: 1200px) {
+  .contact1-pic {
+    width: 33.5%;
+  }
+}
+@media (max-width: 768px) {
+  .container-contact1 {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    background-image: url("/1.jpg");
+  }
+}
+.validate-input {
+  position: relative;
+}
+.contact1-pic {
+  display: none;
+}
+
+.shadow-input1 {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0px 0px 0px 0px;
+  color: rgba(87, 184, 70, 0.5);
+}
+
+.input1:focus + .shadow-input1 {
+  -webkit-animation: anim-shadow 0.5s ease-in-out forwards;
+  animation: anim-shadow 0.5s ease-in-out forwards;
+}
+.contact1-form-title {
+  display: block;
+  font-family: Montserrat-ExtraBold;
+  font-size: 24px;
+  color: #333333;
+  line-height: 1.2;
+  text-align: center;
+  padding-bottom: 44px;
+}
+.contact1-pic img {
+  max-width: 100%;
+}
+@media (max-width: 992px) {
+  .container-contact1 {
+    padding: 90px 80px 88px 90px;
+  }
+
+  .contact1-pic {
+    width: 35%;
+  }
+
+  .contact1-form {
+    width: 55%;
+  }
+}
+
+@media (max-width: 768px) {
+  .container-contact1 {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    background-image: url("/public/1.jpg");
+  }
+}
+
+/* .h2{
+width: 360px;
+height: 300px;
+margin-top: -5%;
+}
+.container{
+position: relative;
+width:90%;
+display:grid;
+grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+grid-template-rows: auto;
+grid-gap:0 40px;
+}
+.container .box{
+position: relative;
+height:400px;
+background: #060c21;
+display:flex;
+justify-content: center;
+align-items:center ;
+border:1px solid #000;
+}
+.content{
+position: relative;
+padding: 20px;
+}
+.box .containt h2{
+position: absolute;
+top:-60px;
+right:20px;
+margin:0;
+padding:0;
+font-size: 10em; 
+color:rgb(255,255,255,.05);
+transition: 0.5s;
+}
+.box:hover .content h2{
+top:-140px;
+}
+.box .content button{
+position: relative;
+margin:20 0 0px;
+padding:10px 20px;
+display: inline-block;
+color: #fff;
+transition:  0.5s;
+
+
+}
+.container .box::before{
+content:'';
+position: absolute;
+top:-2px;
+left:-2px;
+right:-2px;
+background: #fff;
+transform: skew(2deg,2deg);
+z-index: -1;
+}
+.container .box:nth-child(1):before{ 
+background:linear-gradient(315deg,#ff0057,#e64a19)
+
+}
+.container .box:nth-child(2):before{ 
+background:linear-gradient(315deg,#ff0057,#e64a19)
+
+}
+.container .box:nth-child(3):before{ 
+background:linear-gradient(315deg,#ff0057,#e64a19)
+
+}
+.box:hover .containt button{
+transform: translateY(0px);
+opacity: 1;
+visibility:visible;
+
+
+} */
+
+.presentation {
+  display: flex;
+  justify-content: space-between;
+  width: 1069px;
+  margin-left: 143px;
+  margin-top: 206px;
+}
+
+.par {
+  width: 686px;
+}
+.h {
+  width: 378px;
+}
