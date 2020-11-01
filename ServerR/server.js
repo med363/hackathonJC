@@ -22,9 +22,11 @@ MongoClient.connect("mongodb://localhost:27017/Municipalite",{useUnifiedTopology
   if (err) return console.error(err)
   console.log('Connected to Database')
   const db = client.db('Municipalité')
-  const employeesCollection = db.collection('employees')
+  const ChauffeurCollection = db.collection('voyage')
+  const cytoyenCollection = db.collection('contacts1')
+  const QuestionCollection = db.collection('question')
   app.post('/voyage', (req, res) => {
-    employeesCollection.insertOne(req.body)
+    ChauffeurCollection.insertOne(req.body)
       .then(result => {
         console.log(result)
         res.send(result)
@@ -32,12 +34,48 @@ MongoClient.connect("mongodb://localhost:27017/Municipalite",{useUnifiedTopology
       .catch(error => console.error(error))
   })
   app.get('/voyage', (req, res) => {
-    db.collection('employees').find().toArray()
+    db.collection('voyage').find().toArray()
       .then(result => {
         console.log(result)
         res.json(result)
       })
       .catch(error => console.error(error))
   })
+
+
+app.post('/contacts1', (req, res) => {
+  cytoyenCollection.insertOne(req.body)
+    .then(result => {
+      console.log(result)
+      res.send(result)
+    })
+    .catch(error => console.error(error))
+})
+app.get('/contacts1', (req, res) => {
+  db.collection('contacts1').find().toArray()
+    .then(result => {
+      console.log(result)
+      res.json(result)
+    })
+    .catch(error => console.error(error))
+})
+
+
+app.post('/question', (req, res) => {
+  QuestionCollection.insertOne(req.body)
+    .then(result => {
+      console.log(result)
+      res.send(result)
+    })
+    .catch(error => console.error(error))
+})
+app.get('/question', (req, res) => {
+  db.collection('question').find().toArray()
+    .then(result => {
+      console.log(result)
+      res.json(result)
+    })
+    .catch(error => console.error(error))
+})
 })
 
