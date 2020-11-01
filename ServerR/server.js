@@ -23,7 +23,7 @@ MongoClient.connect("mongodb://localhost:27017/Municipalite",{useUnifiedTopology
   console.log('Connected to Database')
   const db = client.db('Municipalité')
   const ChauffeurCollection = db.collection('voyage')
-  const cytoyenCollection = db.collection('contacts1')
+  const CytoyenCollection = db.collection('contacts1')
   const QuestionCollection = db.collection('question')
   app.post('/voyage', (req, res) => {
     ChauffeurCollection.insertOne(req.body)
@@ -44,7 +44,7 @@ MongoClient.connect("mongodb://localhost:27017/Municipalite",{useUnifiedTopology
 
 
 app.post('/contacts1', (req, res) => {
-  cytoyenCollection.insertOne(req.body)
+  CytoyenCollection.insertOne(req.body)
     .then(result => {
       console.log(result)
       res.send(result)
